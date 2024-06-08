@@ -10,10 +10,10 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-body,
+/* body,
 html {
     overflow: auto;
-}
+} */
 
 header {
     background-color: #4b0082; /* 어두운 보라색 */
