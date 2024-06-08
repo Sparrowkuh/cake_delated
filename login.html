@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign Up Active</title>
+        <link rel="stylesheet" href="login.css" />
+        <style>
+            .sign-up-form,
+            .social-login {
+                display: block; /* 항상 폼과 소셜 로그인 버튼을 보이게 설정 */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="global-cont">
+                <div class="inner-cont">
+                    <div class="sign">
+                        <!-- Initially no active class needed as the sign-up form is always visible -->
+                        <span class="sign-up active">Sign Up</span>
+                    </div>
+                    <div class="sign-in-up">
+                        <form class="sign-up-form active" action="index.html" method="get">
+                            <input type="text" placeholder="Email" name="email" />
+                            <input type="password" placeholder="Password" name="password" />
+                            <input type="text" placeholder="Institution/Organization" name="institution" />
+                            <input type="submit" value="Sign Up" />
+                        </form>
+
+                        <div class="divider">
+                            <span>or</span>
+                        </div>
+                        <div class="social-login">
+                            <button class="facebook">Facebook</button>
+                            <button class="google">Google</button>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                        <div class="policy">By creating this account, you agree to <a href="#">our Privacy Policy</a> &amp; <a href="#">Cookie Policy .</a></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Since sign-up is always active, no need for the event listener logic
+        </script>
+    </body>
+</html>
